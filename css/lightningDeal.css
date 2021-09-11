@@ -14,6 +14,131 @@ html,body{
   height:100%;
 
 }
+/* navbar starts here */
+.navbar {
+    background-color: #1A1A2E;
+    width: 100%;
+    font-size: 18px;
+}
+
+.nab {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    list-style: none;
+    border-radius: 10px;
+    background: linear-gradient(34deg, #4a1f963b, #ffffff57);
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 53rem;
+    top: 20px;
+}
+
+.divider1::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 37.5rem;
+    top: 20px;
+}
+
+.divider2::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 22.2rem;
+    top: 20px;
+}
+
+.nab a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.alert-password {
+    text-align: center;
+    padding-right: 69px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text p:first-child {
+    padding-right: 47px;
+}
+
+.text p:nth-child(2) {
+    padding-right: 100px;
+}
+
+.btn2 {
+    width: 80%;
+    background-image: linear-gradient(to top, rgb(241 206 119), rgb(245 216 144));
+    margin: 20px 47px 5px 47px;
+}
+
+.btn2:hover {
+    outline: #854fee;
+}
+
+.sign {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.btn1 {
+    background-color: #1A1A2E;
+    color: #fff;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    border-color: rgb(47, 0, 255);
+    color: #000;
+}
+
+.lock {
+    height: 130px;
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.lock img {
+    height: 90px;
+    width: 90px;
+}
+
+
+/* nav finished  */
 
 .specialoffer
 {
