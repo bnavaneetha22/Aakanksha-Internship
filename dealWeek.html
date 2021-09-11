@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;
+	margin-bottom: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .card img
+  {
+    width:80%;
+    height:50%;
+  }
+
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.card img
+{
+	width:50%;
+	height:20%;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Deal of the Week</h2>
+
+
+<div class="row">
+  <a href="service/cleaner.html"><div class="column">
+    <div class="card">
+       <img src="images/cleaner.png" />
+	    <h2>Cleaner</h2>
+	    <p>50% Offer</p><p>& good service</p>
+    </div>
+  </div></a>
+  <a href="service/electrician.html">
+  <div class="column">
+    <div class="card">
+         <img src="images/electrican.png" >
+	    <h2>Electrician</h2>
+	    <p>750 RS </p><p>Total home electric work</p>
+    </div>
+  </div></a>
+  <a href=service/technician.html""><div class="column">
+    <div class="card">
+        <img src="images/technician.png" >
+	    <h2>Technician</h2>
+	    <p>30% </p><p>discount on techician work</p>
+    </div>
+  </div> </a>
+  <a href="service/mechanic.html">
+  <div class="column">
+    <div class="card">
+          <img src="images/mechanic.png" >
+	    <h3>Mechanic</h3>
+	    <p>50% bumper offer </p><p>on mechanical work</p>
+    </div>
+  </div></a>
+</div>
+
+
+
+<div class="row">
+
+    <a href="service/cleaning.html">
+  <div class="column">
+    <div class="card">
+       <img src="images/housecleaning.jpg" width="100%">
+      <h3>House cleaning</h3>
+      <p>30% offer on</p>
+      <p>house cleaning service</p>
+    </div>
+  </div></a>
+  <a href="service/caretaker.html"> <div class="column">
+    <div class="card">
+      <img src="images/childcare.png">
+      <h3>Baby Sitter</h3>
+      <p>50% offer on</p>
+      <p>caretaker service</p>
+    </div>
+  </div></a>
+
+  <a href="service/laundry.html">
+  <div class="column">
+    <div class="card">
+     <img src="images/laundry.jpg" width="100%">
+      <h3>Laundry</h3>
+      <p>20% offer on</p>
+      <p>laundry</p>
+    </div>
+  </div></a>
+  <a href="service/plumber.html">
+  <div class="column">
+    <div class="card">
+     <div class="card1">
+     <img src="images/plumber.jpg" width="100%">
+      <h3>Plumbing services</h3>
+      <p>20% discount</p>
+      <p>this week</p>
+    </div>
+  </div></a>
+</div>
+
+
+</body>
+</html>
+
