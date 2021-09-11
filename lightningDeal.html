@@ -14,6 +14,153 @@
 <link rel="stylesheet" href="./footer/footer.css">
 </head>
 <body>
+	
+ <!-- nav starts from here  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Lifeline</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nab">
+                    <li class="">
+                        <a href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="divider ">
+                        <a href="lightningDeal.html">Lightning Deal</a>
+                    </li>
+                    <li class=" divider1">
+                        <a href="#explore">Explore Employee</a>
+                    </li>
+                    <li class="divider2 ">
+                        <a href="serviceprovide.html">Reigster As Service Provider</a>
+                    </li>
+
+                </ul>
+                <div class="mx-2">
+                    <button class="btn btn1" data-toggle="modal" data-target="#loginModal"><i
+                            class="bi bi-box-arrow-in-right"></i> Sign in</button>
+                    <button class="btn btn1" data-toggle="modal" data-target="#signupModal"><i
+                            class="bi bi-person-plus-fill"></i> Sign UP</button>
+                </div>
+        </nav>
+        <!-- login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="loginModalLabel">Sign in</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email or mobile Phone number</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="text">
+                                <p style="margin-bottom: 0; padding-right: 20px;">By continuing, you agree to Lifeline's <a href="#">Terms of Use </a></p>
+                                <p style="margin-bottom: 0; padding-right:221px;"> and <a href="">Privacy Policy</a>.</p>
+                            </div>
+
+                            <button type="submit" class="btn btn2">Continue</button>
+                        </form>
+                        <div class="text">
+                            <p style="text-align: center; margin-bottom: 0; padding-left: 50px;">Or</p>
+                            <i class="bi bi-facebook" style="color: blue; cursor: pointer; margin-right: 15px;"><a href="">Sign in with Facebook</a></i>
+                            <i class="bi bi-google" style="color: red; cursor: pointer;"><a href="">Sign in with Google </a></i>
+                            <p><a href="" data-toggle="modal" data-target="#forgetModal" data-dismiss="modal">Forget Password?</a></p>
+
+                        </div>
+                        <hr>
+                        <div class="sign">
+                            New to Lifeline ? <a href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign up<i class="bi bi-caret-right-fill" style="font-size: 16px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SignUp Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="signupModalLabel">Create Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="email" class="form-control" id="Name" aria-describedby="emailHelp" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Mobile Number</label>
+
+                                <input type="tel" class="form-control" id="mobile" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Email (optional)</label>
+                                <input type="tel" class="form-control" id="mobile" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Password</label>
+                                <input type="password" class="form-control" id="" placeholder="At least 8 Characters">
+                            </div>
+                            <div class="alert-password">
+                                <i class="bi bi-info-lg" style="color: blue;"></i> Passwords must be at least 8 characters.
+                            </div>
+                            <div class="text">
+                                <p style="margin-bottom: 0;">We will send you a OTP to verify your phone.</p>
+                                <p style="margin-bottom: 0;">Message and Data rates may apply.</p>
+                            </div>
+                            <button type="submit" class="btn btn2 ">Continue</button>
+                        </form>
+                        <div class="sign">
+                            Already Have Account ? <a href="" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Sign in<i class="bi bi-caret-right-fill" style="font-size: 16px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- password forgetten modal  -->
+        <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="lock">
+                                <img src="https://www.freeiconspng.com/thumbs/lock-icon/black-lock-icon-14.png" alt="">
+                            </div>
+                            <div class="text" style="margin-bottom: 5px;">
+                                <p style="padding-right: 10px;margin-bottom:0;">Enter your email, phone, or username and we'll</p>
+                                <p style="padding-right: 10px;margin-bottom:0;"> send you a link to get back into your account.</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email,Phone or Username">
+                            </div>
+                            <button type="submit" class="btn btn2">Send OTP</button>
+                        </form>
+                        <hr>
+                        <div class="sign">
+                            <a href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Create New Account<i class="bi bi-caret-right-fill" style="font-size: 16px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav ends here  -->
 <!--specialoffer heading -->
 <div class="specialoffer">
 	<div class="text1">
